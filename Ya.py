@@ -41,4 +41,4 @@ def upload(file_path):
 
 
 if __name__ == '__main__':
-    print(upload(file_path='C:\\Users\\User\\Desktop\\hero\\Текст для яндекса.txt'))
+    print(upload(file_path='Текст для яндекса.txt'))
