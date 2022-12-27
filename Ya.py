@@ -3,7 +3,7 @@ import requests
 
 
 def get_token():
-    with open('C:\\Users\\User\\Desktop\\hero\\токен для яндекс.txt', 'r') as f:
+    with open('токен для яндекс.txt', 'r') as f:
         return f.readlines()
 
 
