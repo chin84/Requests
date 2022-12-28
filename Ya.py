@@ -4,8 +4,8 @@ import requests
 
 
 class YaUploader:
-    files_url = 'https://disk.yandex.ru/client/disk/files/Текст для яндекса.txt'
-    upload_link = 'https://cloud-api.yandex.net/v1/disk/resources/upload?path=%D0%A2%D0%B5%D0%BA%D1%81%D1%82%20%D0%B4%D0%BB%D1%8F%20%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0&url=https%3A%2F%2Fdisk.yandex.ru%2Fclient%2Fdisk%2Ffiles%2F%D0%A2%D0%B5%D0%BA%D1%81%D1%82%20%D0%B4%D0%BB%D1%8F%20%D1%8F%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B0.txt'
+    files_url = 'https://disk.yandex.ru/client/disk/files'
+    upload_link = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
 
 
     def __init__(self, token: str):
