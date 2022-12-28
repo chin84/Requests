@@ -22,6 +22,7 @@ class YaUploader:
 
 
     def get_upload_link(self, file_path):
+        filename = file_path.split('/', )[-1]
         params = {'path': file_path, 'overwrite': 'true'}
         response = requests.get(self.upload_link, params=params, headers=self.headers)
         pprint(response.json())
@@ -44,9 +45,9 @@ class YaUploader:
 
 
 if __name__ == '__main__':
-    path_to_file = 'Текст для яндекса.txt'
+    filename = 'Текст для яндекса.txt'
     token = 'y0_AgAAAABkPyMuAAjz_AAAAADX-BHtmNnR110HT_aSuRyeSFtWWNjUTf0'
     uploader = YaUploader(token)
-    result = uploader.upload(path_to_file)
+    result = uploader.upload(filename)
     print(result)
 
